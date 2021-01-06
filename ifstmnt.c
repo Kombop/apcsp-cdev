@@ -28,26 +28,38 @@ int main(int argc, char* argv[])
   // complete the rest below by adding if statements  
     
   // not equal operator
-  printf("true: %d != %d\n", a, b);
-  printf("false: %d != %d\n", a, b);
+  if (a != b)
+    printf("true: %d != %d\n", a, b);
+  else
+    printf("false: %d != %d\n", a, b);
   
   // greater than
-  printf("true: %d > %d\n", a, b);
-  printf("false: %d > %d\n", a, b);
+  if (a > b)
+    printf("true: %d > %d\n", a, b);
+  else
+    printf("false: %d > %d\n", a, b);
     
   // greater than or equal
-  printf("true: %d >= %d\n", a, b);
-  printf("false: %d >= %d\n", a, b);
+  if (a >= b)
+    printf("true: %d >= %d\n", a, b);
+  else
+    printf("false: %d >= %d\n", a, b);
   
   // and
-  printf("true: %d == 0 && %d == 0\n", a, b);
-  printf("false: %d == 0 && %d == 0\n", a, b);
+  if (a == 0 && b == 0)
+    printf("true: %d == 0 && %d == 0\n", a, b);
+  else
+    printf("false: %d == 0 && %d == 0\n", a, b);
   
   // or
-  printf("true: %d == 0 || %d == 0\n", a, b);
-  printf("false: %d == 0 || %d == 0\n", a, b);
+  if (a == 0 || b == 0)
+    printf("true: %d == 0 || %d == 0\n", a, b);
+  else
+    printf("false: %d == 0 || %d == 0\n", a, b);
     
   // not equal to 0
-  printf("true: !(%d == 0)\n", a);
-  printf("false: !(%d == 0)\n", a);
+  if (!(a == 0))
+    printf("true: !(%d == 0)\n", a);
+  else
+    printf("false: !(%d == 0)\n", a);
 }
