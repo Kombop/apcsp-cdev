@@ -9,4 +9,8 @@ int main()
   a = 2;
   c = a + b;
   printf("Sum of %d and %d is %d\n", a, b, c);
+
+  c = a;
+  a = c + b;
+  printf("a = %d and b = %d and c = %d", a, b, c);
 }
