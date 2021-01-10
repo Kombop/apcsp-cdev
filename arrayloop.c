@@ -12,7 +12,14 @@ void getTestInput(int argc, char* argv[], int* a, int* b)
 
 
 // add your arrayAdd function here
-
+int arrayAdd(int arr[], int size, int inc)
+{
+  for (int i = 0; i <= size; i++)
+  {
+    arr[i] = arr[i] + inc;
+  }
+  return arr[size];
+}
 
 
 
@@ -30,13 +37,21 @@ int main(int argc, char* argv[])
   printf("array loop size: %d, inc %d\n", size, inc);
   
   // add your code below to:
-  // - initialize the a 100 element array
+  // - initialize the a 'size' element array
   // - fill it with the square of each index using a for loop i.e. 0, 1, 4, 9 etc
   // - pass the array to arrayAdd to add the increment of inc
   // - print out the array
-
-
-
-
+  int arr[size];
+  for (int i = 0; i <= size; i++)
+  {
+    arr[i] = i * i;
+  }
+  
+  arrayAdd(arr, size, inc);
+  
+  for(int i = 0; i <= size; i++)
+  {
+    printf("%d \n", arr[i]);
+  }
   
 }
